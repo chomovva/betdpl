@@ -1,0 +1,297 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2021-07-25 21:57+0300\n"
+"PO-Revision-Date: 2021-07-25 21:57+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: includes/class-admin.php:53 includes/class-admin.php:205
+msgid "Настройки"
+msgstr "Налаштування"
+
+#: includes/class-admin.php:107 includes/class-admin.php:108
+#: includes/class-init.php:44 includes/class-init.php:45
+msgid "Описание категорий"
+msgstr "Опис категорії"
+
+#: includes/class-admin.php:133
+msgid "Таксономии"
+msgstr "Таксономії"
+
+#: includes/class-admin.php:134
+msgid "Параметры \"описаний\""
+msgstr "Параметри \"описів\""
+
+#: includes/class-admin.php:135
+msgid "Список"
+msgstr "Список"
+
+#: includes/class-admin.php:136
+msgid "Публичный просмотр"
+msgstr "Публічний перегляд"
+
+#: includes/class-admin.php:137
+msgid "Описание типа записи"
+msgstr "Опис типу запису"
+
+#: includes/class-admin.php:138
+msgid "Исключить из поиска"
+msgstr "Виключити з результатів пошуку"
+
+#: includes/class-admin.php:139
+msgid "Показывать в меню"
+msgstr "Показувати в меню"
+
+#: includes/class-admin.php:140
+msgid "Есть архив"
+msgstr "Є архів"
+
+#: includes/class-admin.php:141 partials/field-entriesrewriteslug.php:26
+msgid "Префикс в ЧПУ"
+msgstr "Префікс в семантичному URL"
+
+#: includes/class-admin.php:204
+msgid "Список описаний"
+msgstr "Список описів"
+
+#: includes/class-entry-list-table.php:38
+msgid "Показывать на странице"
+msgstr "Показувати на сторінці"
+
+#: includes/class-entry-list-table.php:73
+msgid "Заголовок"
+msgstr "Заголовок"
+
+#: includes/class-entry-list-table.php:74
+msgid "Термы"
+msgstr "Термы"
+
+#: includes/class-entry-list-table.php:94
+#: includes/class-entry-list-table.php:122
+msgid "Удалить"
+msgstr "Видалити"
+
+#: includes/class-entry-list-table.php:121
+msgid "Редактировать"
+msgstr "Редагувати"
+
+#: includes/class-entry-list-table.php:122
+msgid "Вы уверены?"
+msgstr "Ви впевнені?"
+
+#: includes/class-init.php:46
+msgid "Добавить запись"
+msgstr "Додати запис"
+
+#: includes/class-init.php:47
+msgid "Добавить новую запись"
+msgstr "Додати новий запис"
+
+#: includes/class-init.php:48
+msgid "Редактировать запись"
+msgstr "Редагувати запис"
+
+#: includes/class-init.php:49
+msgid "Новая запись"
+msgstr "Новий запис"
+
+#: includes/class-init.php:50
+msgid "Смотреть запись"
+msgstr "Дивитися запис"
+
+#: includes/class-init.php:51
+msgid "Искать запись"
+msgstr "Шукати запис"
+
+#: includes/class-init.php:52
+msgid "Не найдено"
+msgstr "Не знайдено"
+
+#: includes/class-init.php:53
+msgid "В корзине записей не найдены"
+msgstr "В кошику записів не знайдені"
+
+#: includes/class-init.php:55
+msgid "Описание категории"
+msgstr "Опис категорії"
+
+#: includes/class-wp-list-table.php:174
+msgid "Compact view"
+msgstr ""
+
+#: includes/class-wp-list-table.php:175
+msgid "Extended view"
+msgstr ""
+
+#: includes/class-wp-list-table.php:340
+msgid "No items found."
+msgstr ""
+
+#: includes/class-wp-list-table.php:491
+msgid "Select bulk action"
+msgstr ""
+
+#: includes/class-wp-list-table.php:493
+msgid "Bulk actions"
+msgstr ""
+
+#: includes/class-wp-list-table.php:514
+msgid "Apply"
+msgstr ""
+
+#: includes/class-wp-list-table.php:573 includes/class-wp-list-table.php:1476
+msgid "Show more details"
+msgstr ""
+
+#: includes/class-wp-list-table.php:655
+msgid "All dates"
+msgstr ""
+
+#: includes/class-wp-list-table.php:670
+#, php-format
+msgid "%1$s %2$d"
+msgstr ""
+
+#: includes/class-wp-list-table.php:747 includes/class-wp-list-table.php:777
+#: includes/class-wp-list-table.php:800
+msgid "No comments"
+msgstr ""
+
+#: includes/class-wp-list-table.php:777
+msgid "No approved comments"
+msgstr ""
+
+#: includes/class-wp-list-table.php:800
+msgid "No pending comments"
+msgstr ""
+
+#: includes/class-wp-list-table.php:931
+msgid "First page"
+msgstr ""
+
+#: includes/class-wp-list-table.php:942
+msgid "Previous page"
+msgstr ""
+
+#: includes/class-wp-list-table.php:949 includes/class-wp-list-table.php:953
+msgid "Current Page"
+msgstr ""
+
+#: includes/class-wp-list-table.php:972
+msgid "Next page"
+msgstr ""
+
+#: includes/class-wp-list-table.php:983
+msgid "Last page"
+msgstr ""
+
+#: includes/class-wp-list-table.php:1210
+msgid "Select All"
+msgstr ""
+
+#: partials/field-entriesexcludefromsearch.php:26
+msgid "Исключить этот тип записей из поиска по сайту"
+msgstr "Виключити цей тип записів з пошуку по сайту"
+
+#: partials/field-entrieshasarchive.php:26
+msgid "Включить поддержку страниц архивов для этого типа записей"
+msgstr "Включити підтримку сторінок архівів для цього типу записів"
+
+#: partials/field-entriesqueryable.php:26
+msgid ""
+"Включит публичный просмотр записей этого типа - это значит что во фронт-энде "
+"будут работать URL запросы для этого типа записей"
+msgstr ""
+"Включить публічний перегляд записів цього типу - це значить що у фронт-енді "
+"працюватимуть URL запити для цього типу записів"
+
+#: partials/field-entriesshowinnavmenus.php:26
+msgid "Включить возможность выбирать этот тип записи в меню навигации"
+msgstr "Включити можливість вибирати цей тип запису в меню навігації"
+
+#: partials/field-taxonomynames.php:19
+msgid ""
+"зарегистрированных таксономий отвечающим условиям работы плагина не найдено"
+msgstr ""
+"зареєстрованих таксономій відповідає умовам роботи плагіна, не знайдено"
+
+#: partials/tab-list.php:15
+msgid "Добавить новое описание"
+msgstr "Додати новий опис"
+
+#: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:23
+msgid "Описание на Gutenberg"
+msgstr "Опис на Gutenberg"
+
+#~ msgid "Все посты конвертированы!"
+#~ msgstr "Все посты конвертированы!"
+
+#~ msgid ""
+#~ "Выполняется конвертирование. После его завершения в консоли появится "
+#~ "оповещение."
+#~ msgstr ""
+#~ "Виконується конвертування. Після його завершення в консолі з'явиться "
+#~ "сповіщення."
+
+#~ msgid ""
+#~ "Конвертер предназначен для переноса контента описаний из записей в термы "
+#~ "таксономий."
+#~ msgstr ""
+#~ "Конвертер призначений для перенесення контенту описів із записів в терми "
+#~ "таксономій."
+
+#~ msgid "Важно"
+#~ msgstr "Важливо"
+
+#~ msgid ""
+#~ "Эта операция необратима. Пожалуйста, убедитесь, что вы сделали копию базы "
+#~ "данных."
+#~ msgstr ""
+#~ "Ця операція незворотна. Будь ласка, переконайтеся, що ви зробили копію "
+#~ "бази даних."
+
+#~ msgid "Удалить записи после переноса контента"
+#~ msgstr "Вилучити заголовки після перенесення контенту"
+
+#~ msgid "Переносить контент только в \"основные\" рубрики"
+#~ msgstr "Переносити контент тільки в \"основні\" рубрики"
+
+#, fuzzy
+#~| msgid ""
+#~| "Удалить стандартное описание (если опция отключена, то стандартное "
+#~| "описание и описание Gutenber будут обїединены)"
+#~ msgid ""
+#~ "Удалить стандартное описание (если опция отключена, то стандартное "
+#~ "описание и описание Gutenber будут объединены)"
+#~ msgstr ""
+#~ "Видалити стандартне опис (якщо опція відключена, то стандартне опис і "
+#~ "опис Gutenber будуть обїедінени)"
+
+#~ msgid "Конвертировать"
+#~ msgstr "Конвертувати"
+
+#~ msgid "Справка"
+#~ msgstr "Довідка"
+
+#~ msgid "Основной терм"
+#~ msgstr "Основний терм"
+
+#~ msgid "Конвертер"
+#~ msgstr "Конвертер"
+
+#~ msgid "К посту не прикреплено ни одного термина"
+#~ msgstr "До посту не прикріплено жодного терміна"
+
+#~ msgid "Описание категори"
+#~ msgstr "Опис категорії"
