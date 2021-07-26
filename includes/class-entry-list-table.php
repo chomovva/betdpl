@@ -146,7 +146,7 @@ class Entry_List_Table extends WP_List_Table {
 		if ( ! $action = $this->current_action() ) return;
 		if ( ! wp_verify_nonce( $_POST[ '_wpnonce' ], 'bulk-' . $this->_args[ 'plural' ] ) )
 			wp_die( 'nonce error' );
-		foreach ( $_POST[ 'licids' ] as $post_id ) {
+		foreach ( array_filter( array_map( 'absint', $_POST[ 'licids' ] ) ) as $post_id ) {
 			if ( BETDPL_POST_TYPE_NAME == get_post_type( $post_id ) ) {
 				wp_delete_post( $post_id, true );
 			}

@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-25 21:57+0300\n"
-"PO-Revision-Date: 2021-07-25 21:57+0300\n"
+"POT-Creation-Date: 2021-07-26 22:48+0300\n"
+"PO-Revision-Date: 2021-07-26 22:50+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/class-admin.php:53 includes/class-admin.php:205
@@ -186,19 +186,19 @@ msgstr ""
 
 #: includes/class-wp-list-table.php:949 includes/class-wp-list-table.php:953
 msgid "Current Page"
-msgstr ""
+msgstr "Поточна сторінка"
 
 #: includes/class-wp-list-table.php:972
 msgid "Next page"
-msgstr ""
+msgstr "Наступна сторінка"
 
 #: includes/class-wp-list-table.php:983
 msgid "Last page"
-msgstr ""
+msgstr "Остання сторінка"
 
 #: includes/class-wp-list-table.php:1210
 msgid "Select All"
-msgstr ""
+msgstr "Вибрати все"
 
 #: partials/field-entriesexcludefromsearch.php:26
 msgid "Исключить этот тип записей из поиска по сайту"
@@ -226,13 +226,22 @@ msgid ""
 msgstr ""
 "зареєстрованих таксономій відповідає умовам роботи плагіна, не знайдено"
 
-#: partials/tab-list.php:15
+#: partials/tab-list.php:19
 msgid "Добавить новое описание"
 msgstr "Додати новий опис"
 
 #: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:23
 msgid "Описание на Gutenberg"
 msgstr "Опис на Gutenberg"
+
+#: partials/term-add-form-field.php:39 partials/term-edit-form-field.php:38
+#, php-format
+msgid ""
+"Добавьте <a href=\"%s\" target=\"_blank\">новое описание</a> или выберите "
+"существующее из списка ниже"
+msgstr ""
+"Додайте <a href=\"%s\" target=\"_blank\"> новий опис </a> або виберіть "
+"існуючий зі списку нижче"
 
 #~ msgid "Все посты конвертированы!"
 #~ msgstr "Все посты конвертированы!"

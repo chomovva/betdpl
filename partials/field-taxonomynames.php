@@ -25,11 +25,11 @@ if ( empty( $taxonomies ) ) {
 				<label>
 					<input
 						type="checkbox"
-						name="<?php echo $name; ?>[]"
+						name="<?php echo esc_attr( $name . '[]' ); ?>"
 						<?php checked( true, in_array( $taxonomy->name, $taxonomy_names ), true ); ?>
-						value="<?php echo $taxonomy->name; ?>"
+						value="<?php echo esc_attr( $taxonomy->name ); ?>"
 					/>
-					<?php echo $taxonomy->label; ?>
+					<?php echo esc_html( $taxonomy->label ); ?>
 				</label>
 			</div>
 		<?php

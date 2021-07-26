@@ -19,7 +19,7 @@ $options = get_plugin_options();
 	<label>
 		<input
 			type="checkbox"
-			name="<?php echo BETDPL_NAME . '[entriesshowinnavmenus]'; ?>"
+			name="<?php echo esc_attr( BETDPL_NAME . '[entriesshowinnavmenus]' ); ?>"
 			<?php checked( true, $options[ 'entriesshowinnavmenus' ], true ); ?>
 			value="on"
 		/>

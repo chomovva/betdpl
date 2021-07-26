@@ -20,8 +20,8 @@ $options = get_plugin_options();
 		<input
 			type="text"
 			id="entriesrewriteslug"
-			name="<?php echo BETDPL_NAME . '[entriesrewriteslug]'; ?>"
-			value="<?php echo $options[ 'entriesrewriteslug' ]; ?>"
+			name="<?php echo esc_attr( BETDPL_NAME . '[entriesrewriteslug]' ); ?>"
+			value="<?php echo esc_attr( $options[ 'entriesrewriteslug' ] ); ?>"
 		/>
 		<?php _e( 'Префикс в ЧПУ', BETDPL_NAME ); ?>
 	</label>

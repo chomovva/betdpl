@@ -35,7 +35,7 @@ $entries = get_entries();
 			<p class="description">
 				<?php
 					printf(
-						'Добавьте <a href="%s" target="_blank">новое описание</a> или выберите существующее из списка ниже',
+						__( 'Добавьте <a href="%s" target="_blank">новое описание</a> или выберите существующее из списка ниже', BETDPL_NAME ),
 						admin_url( add_query_arg( [ 'post_type' => BETDPL_POST_TYPE_NAME ], 'post-new.php' ) )
 					);
 				?>

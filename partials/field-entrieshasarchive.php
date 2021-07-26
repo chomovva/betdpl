@@ -19,7 +19,7 @@ $options = get_plugin_options();
 	<label>
 		<input
 			type="checkbox"
-			name="<?php echo BETDPL_NAME . '[entrieshasarchive]'; ?>"
+			name="<?php echo esc_attr( BETDPL_NAME . '[entrieshasarchive]' ); ?>"
 			<?php checked( true, $options[ 'entrieshasarchive' ], true ); ?>
 			value="on"
 		/>

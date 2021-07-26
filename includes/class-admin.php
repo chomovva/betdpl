@@ -204,7 +204,8 @@ class AdminPart {
 			'list'      => __( 'Список описаний', BETDPL_NAME ),
 			'settings'  => __( 'Настройки', BETDPL_NAME ),
 		] );
-		$current_tab = ( isset( $_GET[ 'tab' ] ) && array_key_exists( $_GET[ 'tab' ], $tabs ) ) ? $_GET[ 'tab' ] : array_keys( $tabs )[ 0 ];
+		$request_tab = isset( $_GET[ 'tab' ] ) ? sanitize_key( $_GET[ 'tab' ] ) : '';
+		$current_tab = array_key_exists( $request_tab, $tabs ) ) ? $request_tab : array_keys( $tabs )[ 0 ];
 		?>
 			<div class="wrap">
 				<h2><?php echo esc_html( get_admin_page_title() ) ?></h2>

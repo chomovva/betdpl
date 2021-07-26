@@ -19,7 +19,7 @@ $options = get_plugin_options();
 	<label>
 		<input
 			type="checkbox"
-			name="<?php echo BETDPL_NAME . '[entriesexcludefromsearch]'; ?>"
+			name="<?php echo esc_attr( BETDPL_NAME . '[entriesexcludefromsearch]' ); ?>"
 			<?php checked( true, $options[ 'entriesexcludefromsearch' ], true ); ?>
 			value="on"
 		/>
