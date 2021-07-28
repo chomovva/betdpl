@@ -21,7 +21,7 @@ if ( ! defined( 'WPINC' ) ) {
 
 
 /**
- * Основной класс плагина
+ * Основной класс плагина, который запускает все хуки и фильры
  * @since      1.0.0
  * @package    betdpl
  * @subpackage betdpl/includes

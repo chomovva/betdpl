@@ -134,7 +134,7 @@ class Entry_List_Table extends WP_List_Table {
 	 *  заполнение колонки cb
 	 * */
 	function column_cb( $item ){
-		echo '<input type="checkbox" name="licids[]" id="cb-select-'. $item->ID .'" value="'. $item->ID .'" />';
+		echo '<input type="checkbox" name="licids[]" id="cb-select-'. esc_attr( $item->ID ) .'" value="'. esc_attr( $item->ID ) .'" />';
 	}
 
 

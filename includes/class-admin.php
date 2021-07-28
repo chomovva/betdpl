@@ -50,7 +50,7 @@ class AdminPart {
 	 * */
 	public function add_plugin_action_links( $actions, $plugin_file, $plugin_data, $context ) {
 		if ( 'all' == $context ) {
-			$actions[ 'settings' ] = sprintf( '<a href="%s">%s</a>', add_query_arg( [ 'tab' => 'settings', 'page' => BETDPL_NAME ], admin_url( 'options-general.php' ) ), __( 'Настройки', BETDPL_NAME ) );
+			$actions[ 'settings' ] = sprintf( '<a href="%s">%s</a>', esc_url( add_query_arg( [ 'tab' => 'settings', 'page' => BETDPL_NAME ], admin_url( 'options-general.php' ) ) ), __( 'Настройки', BETDPL_NAME ) );
 		}
 		return $actions;
 	}
@@ -211,7 +211,7 @@ class AdminPart {
 				<h2><?php echo esc_html( get_admin_page_title() ) ?></h2>
 				<nav class="nav-tab-wrapper wp-clearfix">
 					<?php foreach ( $tabs as $slug => $label ) : ?>
-						<a href="<?php echo add_query_arg( [ 'tab' => $slug ] ); ?>" class="nav-tab <?php if ( $slug == $current_tab ) : echo 'nav-tab-active'; endif; ?>">
+						<a href="<?php echo esc_url( add_query_arg( [ 'tab' => $slug ] ) ); ?>" class="nav-tab <?php if ( $slug == $current_tab ) : echo 'nav-tab-active'; endif; ?>">
 							<?php echo esc_html( $label ); ?>
 						</a>
 					<?php endforeach; ?>
