@@ -31,7 +31,10 @@ function get_entries( $args = [] ) {
  * */
 function get_plugin_options() {
 	$result = get_option( BETDPL_NAME );
-	return ( is_array( $result ) ) ? array_merge( [
+	if ( ! is_array( $result ) ) {
+		$result = [];
+	}
+	$result = array_merge( [
 		'taxonomynames'            => [ 'category' ],
 		'entriesqueryable'         => false,
 		'entriesdescription'       => '',
@@ -40,7 +43,8 @@ function get_plugin_options() {
 		'entrieshasarchive'        => false,
 		'entriesrewriteslug'       => BETDPL_POST_TYPE_NAME,
 		'version'                  => BETDPL_VERSION,
-	], $result ): [];
+	], $result );
+	return $result;
 }
 
 
