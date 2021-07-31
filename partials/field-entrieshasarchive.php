@@ -23,6 +23,6 @@ $options = get_plugin_options();
 			<?php checked( true, $options[ 'entrieshasarchive' ], true ); ?>
 			value="on"
 		/>
-		<?php _e( 'Включить поддержку страниц архивов для этого типа записей', BETDPL_NAME ); ?>
+		<?php _e( 'Enable support for archive pages for this post type', BETDPL_NAME ); ?>
 	</label>
 </div>

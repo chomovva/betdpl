@@ -21,7 +21,7 @@ $entries = get_entries();
 <div class="form-field">
 
 	<label for="select-gutenberg-taxonomy-description">
-		<?php _e( 'Описание на Gutenberg', BETDPL_NAME ); ?>
+		<?php _e( 'Description on Gutenberg', BETDPL_NAME ); ?>
 	</label>
 
 	<?php if ( is_array( $entries ) && ! empty( $entries ) ) : ?>
@@ -36,7 +36,7 @@ $entries = get_entries();
 		<p class="description">
 			<?php
 				printf(
-					__( 'Добавьте <a href="%s" target="_blank">новое описание</a> или выберите существующее из списка ниже', BETDPL_NAME ),
+					__( 'Add <a href="%s" target="_blank"> new description </a> or select an existing one from the list below', BETDPL_NAME ),
 					esc_url( admin_url( add_query_arg( [ 'post_type' => BETDPL_POST_TYPE_NAME ], 'post-new.php' ) ) )
 				);
 			?>

@@ -4,7 +4,7 @@ Tags: block editor, gutenberg, taxonomy, description, full description, editor, 
 Requires PHP: 7.2
 Requires at least: 5.0
 Tested up to: 5.8
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 License: GPLv3
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 

@@ -35,7 +35,7 @@ class Entry_List_Table extends WP_List_Table {
 		$this->bulk_action_handler();
 
 		add_screen_option( 'per_page', array(
-			'label'   => __( 'Показывать на странице', BETDPL_NAME ),
+			'label'   => __( 'Show on page', BETDPL_NAME ),
 			'default' => 20,
 			'option'  => 'logs_per_page',
 		) );
@@ -70,8 +70,8 @@ class Entry_List_Table extends WP_List_Table {
 	function get_columns(){
 		return array(
 			'cb'     => '<input type="checkbox" />',
-			'title'  => __( 'Заголовок', BETDPL_NAME ),
-			'terms'  => __( 'Термы', BETDPL_NAME ),
+			'title'  => __( 'Heading', BETDPL_NAME ),
+			'terms'  => __( 'Thermes', BETDPL_NAME ),
 		);
 	}
 
@@ -91,7 +91,7 @@ class Entry_List_Table extends WP_List_Table {
 	 * */
 	protected function get_bulk_actions() {
 		return array(
-			'delete' => __( 'Удалить', BETDPL_NAME ),
+			'delete' => __( 'Delete', BETDPL_NAME ),
 		);
 	}
 
@@ -118,8 +118,8 @@ class Entry_List_Table extends WP_List_Table {
 
 		if ( 'title' === $colname ) {
 			return esc_html( $item->post_title ) . $this->row_actions( array_merge( $actions, [
-				'edit'  => sprintf( '<a href="%s">%s</a>', get_edit_post_link( $item->ID, 'display' ), __( 'Редактировать', BETDPL_NAME ) ),
-				'trash' => sprintf( '<a href="%s" onclick="return confirm(\'%s\');">%s</a>', get_delete_post_link( $item->ID, '', true ), __( 'Вы уверены?', BETDPL_NAME ), __( 'Удалить', BETDPL_NAME ) ),
+				'edit'  => sprintf( '<a href="%s">%s</a>', get_edit_post_link( $item->ID, 'display' ), __( 'Edit', BETDPL_NAME ) ),
+				'trash' => sprintf( '<a href="%s" onclick="return confirm(\'%s\');">%s</a>', get_delete_post_link( $item->ID, '', true ), __( 'Are you sure?', BETDPL_NAME ), __( 'Delete', BETDPL_NAME ) ),
 			] ) );
 		} elseif ( 'terms' === $colname ) {
 			return wp_sprintf( '%l', array_map( function ( $term ) {

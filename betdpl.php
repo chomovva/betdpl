@@ -14,7 +14,7 @@ namespace betdpl;
  * Plugin Name:       Block editor taxonomy description
  * Plugin URI:        https://github.com/chomovva/block-editor-taxonomy-description
  * Description:       The plugin adds the ability to create category descriptions using the block editor (Gutenberg).
- * Version:           1.0.1
+ * Version:           1.0.2
  * Author:            chomovva
  * Author URI:        https://chomovva.ru/
  * Text Domain:       betdpl
@@ -29,7 +29,7 @@ if ( ! defined( 'WPINC' ) ) {
 }
 
 
-define( 'BETDPL_VERSION', '1.0.0' );
+define( 'BETDPL_VERSION', '1.0.2' );
 
 
 if ( ! defined( 'BETDPL_FILE' ) ) {

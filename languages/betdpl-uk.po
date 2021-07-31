@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-26 22:48+0300\n"
-"PO-Revision-Date: 2021-07-30 00:14+0300\n"
+"POT-Creation-Date: 2021-07-31 18:21+0300\n"
+"PO-Revision-Date: 2021-07-31 19:19+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk\n"
@@ -17,172 +17,172 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 
 #: includes/class-admin.php:53 includes/class-admin.php:205
-msgid "Настройки"
+msgid "Settings"
 msgstr "Налаштування"
 
 #: includes/class-admin.php:107 includes/class-admin.php:108
 #: includes/class-init.php:44 includes/class-init.php:45
-msgid "Описание категорий"
-msgstr "Опис категорії"
+msgid "Description of categories"
+msgstr "Опис категорій"
 
 #: includes/class-admin.php:133
-msgid "Таксономии"
+msgid "Taxonomies"
 msgstr "Таксономії"
 
 #: includes/class-admin.php:134
-msgid "Параметры \"описаний\""
-msgstr "Параметри \"описів\""
+msgid "Description options"
+msgstr "Налаштування описів"
 
 #: includes/class-admin.php:135
-msgid "Список"
+msgid "List"
 msgstr "Список"
 
 #: includes/class-admin.php:136
-msgid "Публичный просмотр"
+msgid "Public viewing"
 msgstr "Публічний перегляд"
 
 #: includes/class-admin.php:137
-msgid "Описание типа записи"
+msgid "Record type description"
 msgstr "Опис типу запису"
 
 #: includes/class-admin.php:138
-msgid "Исключить из поиска"
-msgstr "Виключити з результатів пошуку"
+msgid "Exclude from search"
+msgstr "Виключити з пошуку"
 
 #: includes/class-admin.php:139
-msgid "Показывать в меню"
-msgstr "Показувати в меню"
+msgid "Show in menu"
+msgstr "Показати в меню"
 
 #: includes/class-admin.php:140
-msgid "Есть архив"
+msgid "There is an archive"
 msgstr "Є архів"
 
 #: includes/class-admin.php:141 partials/field-entriesrewriteslug.php:26
-msgid "Префикс в ЧПУ"
-msgstr "Префікс в семантичному URL"
+msgid "CNC prefix"
+msgstr "Префікс з ЧПУ"
 
 #: includes/class-admin.php:204
-msgid "Список описаний"
+msgid "Description list"
 msgstr "Список описів"
 
 #: includes/class-entry-list-table.php:38
-msgid "Показывать на странице"
-msgstr "Показувати на сторінці"
+msgid "Show on page"
+msgstr "Показати на сторінці"
 
 #: includes/class-entry-list-table.php:73
-msgid "Заголовок"
+msgid "Heading"
 msgstr "Заголовок"
 
 #: includes/class-entry-list-table.php:74
-msgid "Термы"
+msgid "Thermes"
 msgstr "Терми"
 
 #: includes/class-entry-list-table.php:94
 #: includes/class-entry-list-table.php:122
-msgid "Удалить"
+msgid "Delete"
 msgstr "Видалити"
 
 #: includes/class-entry-list-table.php:121
-msgid "Редактировать"
+msgid "Edit"
 msgstr "Редагувати"
 
 #: includes/class-entry-list-table.php:122
-msgid "Вы уверены?"
+msgid "Are you sure?"
 msgstr "Ви впевнені?"
 
 #: includes/class-init.php:46
-msgid "Добавить запись"
-msgstr "Додати запис"
+msgid "Add a note"
+msgstr "Додати примітку"
 
 #: includes/class-init.php:47
-msgid "Добавить новую запись"
+msgid "Add new entry"
 msgstr "Додати новий запис"
 
 #: includes/class-init.php:48
-msgid "Редактировать запись"
+msgid "Edit entry"
 msgstr "Редагувати запис"
 
 #: includes/class-init.php:49
-msgid "Новая запись"
+msgid "New entry"
 msgstr "Новий запис"
 
 #: includes/class-init.php:50
-msgid "Смотреть запись"
-msgstr "Дивитися запис"
+msgid "View the recording"
+msgstr "Переглянути запис"
 
 #: includes/class-init.php:51
-msgid "Искать запись"
+msgid "Search Record"
 msgstr "Шукати запис"
 
 #: includes/class-init.php:52
-msgid "Не найдено"
+msgid "Not found"
 msgstr "Не знайдено"
 
 #: includes/class-init.php:53
-msgid "В корзине записей не найдены"
-msgstr "В кошику записів не знайдені"
+msgid "No entries found in the basket"
+msgstr "Записів у кошику немає"
 
 #: includes/class-init.php:55
-msgid "Описание категории"
+msgid "Category description"
 msgstr "Опис категорії"
 
 #: includes/class-wp-list-table.php:174
 msgid "Compact view"
-msgstr ""
+msgstr "Компактний вигляд"
 
 #: includes/class-wp-list-table.php:175
 msgid "Extended view"
-msgstr ""
+msgstr "Розширений перегляд"
 
 #: includes/class-wp-list-table.php:340
 msgid "No items found."
-msgstr ""
+msgstr "Елементів не знайдено."
 
 #: includes/class-wp-list-table.php:491
 msgid "Select bulk action"
-msgstr ""
+msgstr "Виберіть масову дію"
 
 #: includes/class-wp-list-table.php:493
 msgid "Bulk actions"
-msgstr ""
+msgstr "Масові дії"
 
 #: includes/class-wp-list-table.php:514
 msgid "Apply"
-msgstr ""
+msgstr "Застосувати"
 
 #: includes/class-wp-list-table.php:573 includes/class-wp-list-table.php:1476
 msgid "Show more details"
-msgstr ""
+msgstr "Показати більше деталей"
 
 #: includes/class-wp-list-table.php:655
 msgid "All dates"
-msgstr ""
+msgstr "Усі дати"
 
 #: includes/class-wp-list-table.php:670
 #, php-format
 msgid "%1$s %2$d"
-msgstr ""
+msgstr "%1$s %2$d"
 
 #: includes/class-wp-list-table.php:747 includes/class-wp-list-table.php:777
 #: includes/class-wp-list-table.php:800
 msgid "No comments"
-msgstr ""
+msgstr "Нема коментарів"
 
 #: includes/class-wp-list-table.php:777
 msgid "No approved comments"
-msgstr ""
+msgstr "Затверджених коментарів немає"
 
 #: includes/class-wp-list-table.php:800
 msgid "No pending comments"
-msgstr ""
+msgstr "Немає коментарів, що очікують на розгляд"
 
 #: includes/class-wp-list-table.php:931
 msgid "First page"
-msgstr ""
+msgstr "Перша сторінка"
 
 #: includes/class-wp-list-table.php:942
 msgid "Previous page"
-msgstr ""
+msgstr "Попередня сторінка"
 
 #: includes/class-wp-list-table.php:949 includes/class-wp-list-table.php:953
 msgid "Current Page"
@@ -201,47 +201,163 @@ msgid "Select All"
 msgstr "Вибрати все"
 
 #: partials/field-entriesexcludefromsearch.php:26
-msgid "Исключить этот тип записей из поиска по сайту"
-msgstr "Виключити цей тип записів з пошуку по сайту"
+msgid "Exclude this post type from site search"
+msgstr "Виключити цей тип допису з пошуку на сайті"
 
 #: partials/field-entrieshasarchive.php:26
-msgid "Включить поддержку страниц архивов для этого типа записей"
-msgstr "Включити підтримку сторінок архівів для цього типу записів"
+msgid "Enable support for archive pages for this post type"
+msgstr "Увімкніть підтримку сторінок архіву для цього типу публікацій"
 
 #: partials/field-entriesqueryable.php:26
 msgid ""
-"Включит публичный просмотр записей этого типа - это значит что во фронт-энде "
-"будут работать URL запросы для этого типа записей"
+"Will enable public viewing of posts of this type - this means that URL "
+"requests for this post type will work in the front-end"
 msgstr ""
-"Включить публічний перегляд записів цього типу - це значить що у фронт-енді "
-"працюватимуть URL запити для цього типу записів"
+"Увімкнути загальнодоступний перегляд публікацій такого типу - це означає, що "
+"запити URL-адреси для цього типу зписів працюватимуть у публічній частині "
+"сайту"
 
 #: partials/field-entriesshowinnavmenus.php:26
-msgid "Включить возможность выбирать этот тип записи в меню навигации"
-msgstr "Включити можливість вибирати цей тип запису в меню навігації"
+msgid "Enable the ability to select this post type in the navigation menu"
+msgstr "Увімкніть можливість вибору цього типу записів в меню навігації"
 
 #: partials/field-taxonomynames.php:19
-msgid ""
-"зарегистрированных таксономий отвечающим условиям работы плагина не найдено"
-msgstr ""
-"зареєстрованих таксономій відповідає умовам роботи плагіна, не знайдено"
+msgid "No registered taxonomies found matching the plugin conditions"
+msgstr "Зареєстрованих таксономій, що відповідають умовам плагіна, не знайдено"
 
 #: partials/tab-list.php:19
-msgid "Добавить новое описание"
+msgid "Add new description"
 msgstr "Додати новий опис"
 
-#: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:23
-msgid "Описание на Gutenberg"
-msgstr "Опис на Gutenberg"
+#: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:26
+msgid "Description on Gutenberg"
+msgstr "Опис на редакторі Гутенберг"
 
-#: partials/term-add-form-field.php:39 partials/term-edit-form-field.php:38
+#: partials/term-add-form-field.php:39 partials/term-edit-form-field.php:41
 #, php-format
 msgid ""
-"Добавьте <a href=\"%s\" target=\"_blank\">новое описание</a> или выберите "
-"существующее из списка ниже"
+"Add <a href=\"%s\" target=\"_blank\"> new description </a> or select an "
+"existing one from the list below"
 msgstr ""
 "Додайте <a href=\"%s\" target=\"_blank\"> новий опис </a> або виберіть "
-"існуючий зі списку нижче"
+"наявний з переліку нижче"
+
+#~ msgid "Настройки"
+#~ msgstr "Налаштування"
+
+#~ msgid "Описание категорий"
+#~ msgstr "Опис категорії"
+
+#~ msgid "Таксономии"
+#~ msgstr "Таксономії"
+
+#~ msgid "Параметры \"описаний\""
+#~ msgstr "Параметри \"описів\""
+
+#~ msgid "Список"
+#~ msgstr "Список"
+
+#~ msgid "Публичный просмотр"
+#~ msgstr "Публічний перегляд"
+
+#~ msgid "Описание типа записи"
+#~ msgstr "Опис типу запису"
+
+#~ msgid "Исключить из поиска"
+#~ msgstr "Виключити з результатів пошуку"
+
+#~ msgid "Показывать в меню"
+#~ msgstr "Показувати в меню"
+
+#~ msgid "Есть архив"
+#~ msgstr "Є архів"
+
+#~ msgid "Префикс в ЧПУ"
+#~ msgstr "Префікс в семантичному URL"
+
+#~ msgid "Список описаний"
+#~ msgstr "Список описів"
+
+#~ msgid "Показывать на странице"
+#~ msgstr "Показувати на сторінці"
+
+#~ msgid "Заголовок"
+#~ msgstr "Заголовок"
+
+#~ msgid "Термы"
+#~ msgstr "Терми"
+
+#~ msgid "Удалить"
+#~ msgstr "Видалити"
+
+#~ msgid "Редактировать"
+#~ msgstr "Редагувати"
+
+#~ msgid "Вы уверены?"
+#~ msgstr "Ви впевнені?"
+
+#~ msgid "Добавить запись"
+#~ msgstr "Додати запис"
+
+#~ msgid "Добавить новую запись"
+#~ msgstr "Додати новий запис"
+
+#~ msgid "Редактировать запись"
+#~ msgstr "Редагувати запис"
+
+#~ msgid "Новая запись"
+#~ msgstr "Новий запис"
+
+#~ msgid "Смотреть запись"
+#~ msgstr "Дивитися запис"
+
+#~ msgid "Искать запись"
+#~ msgstr "Шукати запис"
+
+#~ msgid "Не найдено"
+#~ msgstr "Не знайдено"
+
+#~ msgid "В корзине записей не найдены"
+#~ msgstr "В кошику записів не знайдені"
+
+#~ msgid "Описание категории"
+#~ msgstr "Опис категорії"
+
+#~ msgid "Исключить этот тип записей из поиска по сайту"
+#~ msgstr "Виключити цей тип записів з пошуку по сайту"
+
+#~ msgid "Включить поддержку страниц архивов для этого типа записей"
+#~ msgstr "Включити підтримку сторінок архівів для цього типу записів"
+
+#~ msgid ""
+#~ "Включит публичный просмотр записей этого типа - это значит что во фронт-"
+#~ "энде будут работать URL запросы для этого типа записей"
+#~ msgstr ""
+#~ "Включить публічний перегляд записів цього типу - це значить що у фронт-"
+#~ "енді працюватимуть URL запити для цього типу записів"
+
+#~ msgid "Включить возможность выбирать этот тип записи в меню навигации"
+#~ msgstr "Включити можливість вибирати цей тип запису в меню навігації"
+
+#~ msgid ""
+#~ "зарегистрированных таксономий отвечающим условиям работы плагина не "
+#~ "найдено"
+#~ msgstr ""
+#~ "зареєстрованих таксономій відповідає умовам роботи плагіна, не знайдено"
+
+#~ msgid "Добавить новое описание"
+#~ msgstr "Додати новий опис"
+
+#~ msgid "Описание на Gutenberg"
+#~ msgstr "Опис на Gutenberg"
+
+#, php-format
+#~ msgid ""
+#~ "Добавьте <a href=\"%s\" target=\"_blank\">новое описание</a> или выберите "
+#~ "существующее из списка ниже"
+#~ msgstr ""
+#~ "Додайте <a href=\"%s\" target=\"_blank\"> новий опис </a> або виберіть "
+#~ "існуючий зі списку нижче"
 
 #~ msgid "Все посты конвертированы!"
 #~ msgstr "Все посты конвертированы!"
