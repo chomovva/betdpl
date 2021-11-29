@@ -23,6 +23,6 @@ $options = get_plugin_options();
 			<?php checked( true, $options[ 'entrieshasarchive' ], true ); ?>
 			value="on"
 		/>
-		<?php _e( 'Enable support for archive pages for this post type', BETDPL_NAME ); ?>
+		<?php _e( 'Enable support for archive pages for this post type', BETDPL_TEXTDOMAIN ); ?>
 	</label>
 </div>

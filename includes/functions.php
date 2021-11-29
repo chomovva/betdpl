@@ -11,16 +11,17 @@ if ( ! defined( 'WPINC' ) ) {
 
 /**
  * Получает список всех описаний
- * @return   array|WP_Error
+ * @param    $args    array               Список аргументов, в соответствии с которыми будет получен результат
+ * @return            array|WP_Error
  * */
 function get_entries( $args = [] ) {
 	$entries_args = array_merge( [
 		'numberposts' => -1,
 		'orderby'     => 'date',
 		'order'       => 'DESC',
-		'post_type'   => BETDPL_POST_TYPE_NAME,
 		'suppress_filters' => true,
 	], $args );
+	$entries_args[ 'post_type' ] = BETDPL_POST_TYPE_NAME;
 	return get_posts( apply_filters( 'get_category_description_args', $entries_args ) );
 }
 
@@ -62,10 +63,10 @@ function get_plugin_taxonomy_names() {
  * Получает идентификатор "описания" терма
  * @param    int        $term_id   идентификатор термина описание которого нужно получить
  * @param    bool       $single    true - возвращиет одно описание, false - все, которые прикреплены
- * @return   int|bool
+ * @return   int
  * */
 function get_description_id( $term_id, $single = true ) {
-	$result = false;
+	$result = 0;
 	if ( absint( $term_id ) ) {
 		$term = get_term( $term_id, '', OBJECT, 'raw' );
 		if ( $term instanceof \WP_Term ) {
@@ -83,7 +84,7 @@ function get_description_id( $term_id, $single = true ) {
 						'field'    => 'term_id',
 						'terms'    => $term->term_id,
 						'operator' => 'IN',
-						'include_children' => true,
+						'include_children' => false,
 					],
 				],
 			] );
@@ -120,7 +121,8 @@ function get_description_content( $term_id ) {
 
 /**
  * Возвращает идентификаторы термов описания
- * 
+ * @param    int    $post_id    идентификатор описания
+ * @return   array
  * */
 function get_decription_entry_terms_ids( $post_id = 0 ) {
 	$result = [];

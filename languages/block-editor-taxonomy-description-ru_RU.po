@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-31 19:55+0300\n"
-"PO-Revision-Date: 2021-07-31 19:55+0300\n"
+"POT-Creation-Date: 2021-08-07 11:57+0300\n"
+"PO-Revision-Date: 2021-08-07 12:01+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -11,9 +11,8 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Poedit 3.0\n"
 "X-Poedit-Basepath: ..\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
-"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;esc_html__;esc_html_e\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr__;esc_attr_e;esc_html__;esc_html_e;_e\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: .git\n"
 
@@ -21,8 +20,7 @@ msgstr ""
 msgid "Settings"
 msgstr "Настройки"
 
-#: includes/class-admin.php:107 includes/class-admin.php:108
-#: includes/class-init.php:44 includes/class-init.php:45
+#: includes/class-admin.php:107 includes/class-admin.php:108 includes/class-init.php:44 includes/class-init.php:45
 msgid "Description of categories"
 msgstr "Описание категорий"
 
@@ -58,7 +56,7 @@ msgstr "Показывать в меню"
 msgid "There is an archive"
 msgstr "Есть архив"
 
-#: includes/class-admin.php:141 partials/field-entriesrewriteslug.php:26
+#: includes/class-admin.php:141
 msgid "CNC prefix"
 msgstr "Префикс ЧПУ"
 
@@ -78,8 +76,7 @@ msgstr "Заголовок"
 msgid "Thermes"
 msgstr "Термы"
 
-#: includes/class-entry-list-table.php:94
-#: includes/class-entry-list-table.php:122
+#: includes/class-entry-list-table.php:94 includes/class-entry-list-table.php:122
 msgid "Delete"
 msgstr "Удалить"
 
@@ -108,11 +105,11 @@ msgid "New entry"
 msgstr "Новая запись"
 
 #: includes/class-init.php:50
-msgid "View the recording"
+msgid "View the entry"
 msgstr "Посмотреть запись"
 
 #: includes/class-init.php:51
-msgid "Search Record"
+msgid "Search entry"
 msgstr "Искать запись"
 
 #: includes/class-init.php:52
@@ -120,7 +117,7 @@ msgid "Not found"
 msgstr "Не найдено"
 
 #: includes/class-init.php:53
-msgid "No entries found in the basket"
+msgid "No entries found in the trash"
 msgstr "В корзине записей не найдено"
 
 #: includes/class-init.php:55
@@ -164,10 +161,9 @@ msgstr "Все даты"
 msgid "%1$s %2$d"
 msgstr "%1$s %2$d"
 
-#: includes/class-wp-list-table.php:747 includes/class-wp-list-table.php:777
-#: includes/class-wp-list-table.php:800
+#: includes/class-wp-list-table.php:747 includes/class-wp-list-table.php:777 includes/class-wp-list-table.php:800
 msgid "No comments"
-msgstr "Без комментариев"
+msgstr "Комментария нет"
 
 #: includes/class-wp-list-table.php:777
 msgid "No approved comments"
@@ -203,46 +199,44 @@ msgstr "Выбрать все"
 
 #: partials/field-entriesexcludefromsearch.php:26
 msgid "Exclude this post type from site search"
-msgstr "Исключить тип запись из поиска"
+msgstr "Исключить тип записи из поиска"
 
 #: partials/field-entrieshasarchive.php:26
 msgid "Enable support for archive pages for this post type"
-msgstr "Включить поддержку страниц архива для этого типа записей"
+msgstr "Разрешить поддержку страниц архива для этого типа записей"
 
 #: partials/field-entriesqueryable.php:26
-msgid ""
-"Will enable public viewing of posts of this type - this means that URL "
-"requests for this post type will work in the front-end"
-msgstr ""
-"Включит публичный просмотр сообщений этого типа записи - это означает, что "
-"URL-запросы для этого типа записей будут работать в публичной части сайта"
+msgid "Enable public viewing of posts of this type - this means that URL requests for this post type will be processed in the front-end"
+msgstr "Разрешить публичный просмотр, URL-запросы для этого типа записей будут обрабатываться в публичной части сайта"
 
 #: partials/field-entriesshowinnavmenus.php:26
 msgid "Enable the ability to select this post type in the navigation menu"
-msgstr "Включите возможность выбора этого типа записей в меню навигации"
+msgstr "Разрешить возможность выбора этого типа записей в меню навигации"
 
 #: partials/field-taxonomynames.php:19
 msgid "No registered taxonomies found matching the plugin conditions"
-msgstr ""
-"Не найдено ни одной зарегистрированной таксономии, соответствующей условиям "
-"плагина"
+msgstr "Не найдено ни одной зарегистрированной таксономии, соответствующей условиям плагина"
 
 #: partials/tab-list.php:19
 msgid "Add new description"
 msgstr "Добавить новое описание"
 
-#: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:26
-msgid "Description on Gutenberg"
+#: partials/term-add-form-field.php:25 partials/term-edit-form-field.php:26
+msgid "Description by means of Gutenberg"
 msgstr "Описание на Gutenberg"
 
-#: partials/term-add-form-field.php:39 partials/term-edit-form-field.php:41
+#: partials/term-add-form-field.php:38 partials/term-edit-form-field.php:41
 #, php-format
-msgid ""
-"Add <a href=\"%s\" target=\"_blank\"> new description </a> or select an "
-"existing one from the list below"
-msgstr ""
-"Добавить <a href=\"%s\" target=\"_blank\"> новую запись </a> или выберите "
-"существующую из списка ниже"
+msgid "Add <a href=\"%s\" target=\"_blank\"> new description </a> or select an existing one from the list below"
+msgstr "Добавить <a href=\"%s\" target=\"_blank\"> новую запись </a> или выберите существующую из списка ниже"
+
+#: partials/term-add-form-field.php:47 partials/term-edit-form-field.php:50
+#, php-format
+msgid "No description has yet been created by means of Gutenberg. Add a <a href=\"%s\" target=\"_blank\">new description</a>."
+msgstr "Описание на Gutenberg ещё не создано. Добавить <a href=\"%s\" target=\"_blank\">новое описание</a>."
+
+#~ msgid "View the recording"
+#~ msgstr "Посмотреть запись"
 
 #~ msgid "Настройки"
 #~ msgstr "Настройки"

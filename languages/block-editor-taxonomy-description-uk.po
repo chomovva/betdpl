@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2021-07-31 18:21+0300\n"
-"PO-Revision-Date: 2021-07-31 19:19+0300\n"
+"POT-Creation-Date: 2021-08-07 11:59+0300\n"
+"PO-Revision-Date: 2021-08-07 11:59+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: uk\n"
@@ -57,7 +57,7 @@ msgstr "Показати в меню"
 msgid "There is an archive"
 msgstr "Є архів"
 
-#: includes/class-admin.php:141 partials/field-entriesrewriteslug.php:26
+#: includes/class-admin.php:141
 msgid "CNC prefix"
 msgstr "Префікс з ЧПУ"
 
@@ -107,11 +107,11 @@ msgid "New entry"
 msgstr "Новий запис"
 
 #: includes/class-init.php:50
-msgid "View the recording"
-msgstr "Переглянути запис"
+msgid "View the entry"
+msgstr "Зепеглянути запис"
 
 #: includes/class-init.php:51
-msgid "Search Record"
+msgid "Search entry"
 msgstr "Шукати запис"
 
 #: includes/class-init.php:52
@@ -119,8 +119,8 @@ msgid "Not found"
 msgstr "Не знайдено"
 
 #: includes/class-init.php:53
-msgid "No entries found in the basket"
-msgstr "Записів у кошику немає"
+msgid "No entries found in the trash"
+msgstr "В кошику записів, не знайдено"
 
 #: includes/class-init.php:55
 msgid "Category description"
@@ -202,24 +202,23 @@ msgstr "Вибрати все"
 
 #: partials/field-entriesexcludefromsearch.php:26
 msgid "Exclude this post type from site search"
-msgstr "Виключити цей тип допису з пошуку на сайті"
+msgstr "Виключити цей тип запису з пошуку на сайті"
 
 #: partials/field-entrieshasarchive.php:26
 msgid "Enable support for archive pages for this post type"
-msgstr "Увімкніть підтримку сторінок архіву для цього типу публікацій"
+msgstr "Дозволити підтримку сторінок архіву для цього типу публікацій"
 
 #: partials/field-entriesqueryable.php:26
 msgid ""
-"Will enable public viewing of posts of this type - this means that URL "
-"requests for this post type will work in the front-end"
+"Enable public viewing of posts of this type - this means that URL requests "
+"for this post type will be processed in the front-end"
 msgstr ""
-"Увімкнути загальнодоступний перегляд публікацій такого типу - це означає, що "
-"запити URL-адреси для цього типу зписів працюватимуть у публічній частині "
-"сайту"
+"Дозволити публічний перегляд, URL-запити для цього типу записів будуть "
+"оброблятися в публічній частині сайту"
 
 #: partials/field-entriesshowinnavmenus.php:26
 msgid "Enable the ability to select this post type in the navigation menu"
-msgstr "Увімкніть можливість вибору цього типу записів в меню навігації"
+msgstr "Дозволити можливість вибору цього типу записів в меню навігації"
 
 #: partials/field-taxonomynames.php:19
 msgid "No registered taxonomies found matching the plugin conditions"
@@ -229,11 +228,11 @@ msgstr "Зареєстрованих таксономій, що відповід
 msgid "Add new description"
 msgstr "Додати новий опис"
 
-#: partials/term-add-form-field.php:24 partials/term-edit-form-field.php:26
-msgid "Description on Gutenberg"
-msgstr "Опис на редакторі Гутенберг"
+#: partials/term-add-form-field.php:25 partials/term-edit-form-field.php:26
+msgid "Description by means of Gutenberg"
+msgstr "Опис на Gutenberg"
 
-#: partials/term-add-form-field.php:39 partials/term-edit-form-field.php:41
+#: partials/term-add-form-field.php:38 partials/term-edit-form-field.php:41
 #, php-format
 msgid ""
 "Add <a href=\"%s\" target=\"_blank\"> new description </a> or select an "
@@ -241,6 +240,18 @@ msgid ""
 msgstr ""
 "Додайте <a href=\"%s\" target=\"_blank\"> новий опис </a> або виберіть "
 "наявний з переліку нижче"
+
+#: partials/term-add-form-field.php:47 partials/term-edit-form-field.php:50
+#, php-format
+msgid ""
+"No description has yet been created by means of Gutenberg. Add a <a href=\"%s"
+"\" target=\"_blank\">new description</a>."
+msgstr ""
+"Опис на Gutenberg ще не створено. Додати <a href=\"%s\" target=\"_blank"
+"\">новий опис</a>."
+
+#~ msgid "View the recording"
+#~ msgstr "Переглянути запис"
 
 #~ msgid "Настройки"
 #~ msgstr "Налаштування"

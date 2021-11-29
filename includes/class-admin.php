@@ -50,7 +50,7 @@ class AdminPart {
 	 * */
 	public function add_plugin_action_links( $actions, $plugin_file, $plugin_data, $context ) {
 		if ( 'all' == $context ) {
-			$actions[ 'settings' ] = sprintf( '<a href="%s">%s</a>', esc_url( add_query_arg( [ 'tab' => 'settings', 'page' => BETDPL_NAME ], admin_url( 'options-general.php' ) ) ), __( 'Settings', BETDPL_NAME ) );
+			$actions[ 'settings' ] = sprintf( '<a href="%s">%s</a>', esc_url( add_query_arg( [ 'tab' => 'settings', 'page' => BETDPL_NAME ], admin_url( 'options-general.php' ) ) ), __( 'Settings', BETDPL_TEXTDOMAIN ) );
 		}
 		return $actions;
 	}
@@ -104,8 +104,8 @@ class AdminPart {
 	 * */
 	public function add_options_page() {
 		$hook = add_options_page(
-			__( 'Description of categories', BETDPL_NAME ),
-			__( 'Description of categories', BETDPL_NAME ),
+			__( 'Description of categories', BETDPL_TEXTDOMAIN ),
+			__( 'Description of categories', BETDPL_TEXTDOMAIN ),
 			'manage_options',
 			BETDPL_NAME,
 			[ $this, 'render_page' ]
@@ -130,15 +130,15 @@ class AdminPart {
 	 * */
 	public function register_options() {
 		register_setting( BETDPL_NAME, BETDPL_NAME, [ $this, 'sanitize_setting_callback' ] );
-		add_settings_section( 'taxonomy', __( 'Taxonomies', BETDPL_NAME ), '', BETDPL_NAME );
-		add_settings_section( 'entries', __( 'Description options', BETDPL_NAME ), '', BETDPL_NAME );
-		add_settings_field( 'taxonomynames', __( 'List', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'taxonomy', 'taxonomynames' );
-		add_settings_field( 'entriesqueryable', __( 'Public viewing', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesqueryable' );
-		add_settings_field( 'entriesdescription', __( 'Record type description', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesdescription' );
-		add_settings_field( 'entriesexcludefromsearch', __( 'Exclude from search', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesexcludefromsearch' );
-		add_settings_field( 'entriesshowinnavmenus', __( 'Show in menu', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesshowinnavmenus' );
-		add_settings_field( 'entrieshasarchive', __( 'There is an archive', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entrieshasarchive' );
-		add_settings_field( 'entriesrewriteslug', __( 'CNC prefix', BETDPL_NAME ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesrewriteslug' );
+		add_settings_section( 'taxonomy', __( 'Taxonomies', BETDPL_TEXTDOMAIN ), '', BETDPL_NAME );
+		add_settings_section( 'entries', __( 'Description options', BETDPL_TEXTDOMAIN ), '', BETDPL_NAME );
+		add_settings_field( 'taxonomynames', __( 'List', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'taxonomy', 'taxonomynames' );
+		add_settings_field( 'entriesqueryable', __( 'Public viewing', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesqueryable' );
+		add_settings_field( 'entriesdescription', __( 'Record type description', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesdescription' );
+		add_settings_field( 'entriesexcludefromsearch', __( 'Exclude from search', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesexcludefromsearch' );
+		add_settings_field( 'entriesshowinnavmenus', __( 'Show in menu', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesshowinnavmenus' );
+		add_settings_field( 'entrieshasarchive', __( 'There is an archive', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entrieshasarchive' );
+		add_settings_field( 'entriesrewriteslug', __( 'CNC prefix', BETDPL_TEXTDOMAIN ), [ $this, 'render_setting_field'], BETDPL_NAME, 'entries', 'entriesrewriteslug' );
 	}
 
 
@@ -201,8 +201,8 @@ class AdminPart {
 	public function render_page() {
 		global $post;
 		$tabs = apply_filters( BETDPL_NAME . '_settings-tabs', [
-			'list'      => __( 'Description list', BETDPL_NAME ),
-			'settings'  => __( 'Settings', BETDPL_NAME ),
+			'list'      => __( 'Description list', BETDPL_TEXTDOMAIN ),
+			'settings'  => __( 'Settings', BETDPL_TEXTDOMAIN ),
 		] );
 		$request_tab = isset( $_GET[ 'tab' ] ) ? sanitize_key( $_GET[ 'tab' ] ) : '';
 		$current_tab = array_key_exists( $request_tab, $tabs ) ? $request_tab : array_keys( $tabs )[ 0 ];

@@ -23,6 +23,6 @@ $options = get_plugin_options();
 			<?php checked( true, $options[ 'entriesqueryable' ], true ); ?>
 			value="on"
 		/>
-		<?php _e( 'Will enable public viewing of posts of this type - this means that URL requests for this post type will work in the front-end', BETDPL_NAME ); ?>
+		<?php _e( 'Enable public viewing of posts of this type - this means that URL requests for this post type will be processed in the front-end', BETDPL_TEXTDOMAIN ); ?>
 	</label>
 </div>

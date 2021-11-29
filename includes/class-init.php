@@ -28,7 +28,7 @@ class InitPart {
 	 * @since      1.0.0
 	 * */
 	public function load_textdomain() {
-		load_plugin_textdomain( BETDPL_NAME, false, dirname( plugin_basename( BETDPL_FILE ) ) . '/languages' ); 
+		load_plugin_textdomain( BETDPL_TEXTDOMAIN, false, dirname( plugin_basename( BETDPL_FILE ) ) . '/languages' ); 
 	}
 
 
@@ -41,18 +41,18 @@ class InitPart {
 		register_post_type( BETDPL_POST_TYPE_NAME, [
 			'label'  => null,
 			'labels' => [
-				'name'               => __( 'Description of categories', BETDPL_NAME ),
-				'singular_name'      => __( 'Description of categories', BETDPL_NAME ),
-				'add_new'            => __( 'Add a note', BETDPL_NAME ),
-				'add_new_item'       => __( 'Add new entry', BETDPL_NAME ),
-				'edit_item'          => __( 'Edit entry', BETDPL_NAME ),
-				'new_item'           => __( 'New entry', BETDPL_NAME ),
-				'view_item'          => __( 'View the recording', BETDPL_NAME ),
-				'search_items'       => __( 'Search Record', BETDPL_NAME ),
-				'not_found'          => __( 'Not found', BETDPL_NAME ),
-				'not_found_in_trash' => __( 'No entries found in the basket', BETDPL_NAME ),
+				'name'               => __( 'Description of categories', BETDPL_TEXTDOMAIN ),
+				'singular_name'      => __( 'Description of categories', BETDPL_TEXTDOMAIN ),
+				'add_new'            => __( 'Add a note', BETDPL_TEXTDOMAIN ),
+				'add_new_item'       => __( 'Add new entry', BETDPL_TEXTDOMAIN ),
+				'edit_item'          => __( 'Edit entry', BETDPL_TEXTDOMAIN ),
+				'new_item'           => __( 'New entry', BETDPL_TEXTDOMAIN ),
+				'view_item'          => __( 'View the entry', BETDPL_TEXTDOMAIN ),
+				'search_items'       => __( 'Search entry', BETDPL_TEXTDOMAIN ),
+				'not_found'          => __( 'Not found', BETDPL_TEXTDOMAIN ),
+				'not_found_in_trash' => __( 'No entries found in the trash', BETDPL_TEXTDOMAIN ),
 				'parent_item_colon'  => '',
-				'menu_name'          => __( 'Category description', BETDPL_NAME ),
+				'menu_name'          => __( 'Category description', BETDPL_TEXTDOMAIN ),
 			],
 			'description'            => $options[ 'entriesdescription' ],
 			'public'                 => false,

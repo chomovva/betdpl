@@ -23,6 +23,6 @@ $options = get_plugin_options();
 			<?php checked( true, $options[ 'entriesexcludefromsearch' ], true ); ?>
 			value="on"
 		/>
-		<?php _e( 'Exclude this post type from site search', BETDPL_NAME ); ?>
+		<?php _e( 'Exclude this post type from site search', BETDPL_TEXTDOMAIN ); ?>
 	</label>
 </div>

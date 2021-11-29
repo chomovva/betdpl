@@ -171,8 +171,8 @@ class WP_List_Table {
 
 		if ( empty( $this->modes ) ) {
 			$this->modes = array(
-				'list'    => __( 'Compact view', BETDPL_NAME ),
-				'excerpt' => __( 'Extended view', BETDPL_NAME ),
+				'list'    => __( 'Compact view', BETDPL_TEXTDOMAIN ),
+				'excerpt' => __( 'Extended view', BETDPL_TEXTDOMAIN ),
 			);
 		}
 	}
@@ -337,7 +337,7 @@ class WP_List_Table {
 	 * @since 3.1.0
 	 */
 	public function no_items() {
-		_e( 'No items found.' );
+		_e( 'No items found.', BETDPL_TEXTDOMAIN );
 	}
 
 	/**
@@ -488,9 +488,9 @@ class WP_List_Table {
 			return;
 		}
 
-		echo '<label for="bulk-action-selector-' . esc_attr( $which ) . '" class="screen-reader-text">' . __( 'Select bulk action', BETDPL_NAME ) . '</label>';
+		echo '<label for="bulk-action-selector-' . esc_attr( $which ) . '" class="screen-reader-text">' . __( 'Select bulk action', BETDPL_TEXTDOMAIN ) . '</label>';
 		echo '<select name="action' . $two . '" id="bulk-action-selector-' . esc_attr( $which ) . "\">\n";
-		echo '<option value="-1">' . __( 'Bulk actions', BETDPL_NAME ) . "</option>\n";
+		echo '<option value="-1">' . __( 'Bulk actions', BETDPL_TEXTDOMAIN ) . "</option>\n";
 
 		foreach ( $this->_actions as $key => $value ) {
 			if ( is_array( $value ) ) {
@@ -511,7 +511,7 @@ class WP_List_Table {
 
 		echo "</select>\n";
 
-		submit_button( __( 'Apply', BETDPL_NAME ), 'action', '', false, array( 'id' => "doaction$two" ) );
+		submit_button( __( 'Apply', BETDPL_TEXTDOMAIN ), 'action', '', false, array( 'id' => "doaction$two" ) );
 		echo "\n";
 	}
 
@@ -570,7 +570,7 @@ class WP_List_Table {
 
 		$out .= '</div>';
 
-		$out .= '<button type="button" class="toggle-row"><span class="screen-reader-text">' . __( 'Show more details', BETDPL_NAME ) . '</span></button>';
+		$out .= '<button type="button" class="toggle-row"><span class="screen-reader-text">' . __( 'Show more details', BETDPL_TEXTDOMAIN ) . '</span></button>';
 
 		return $out;
 	}
@@ -652,7 +652,7 @@ class WP_List_Table {
 		?>
 		<label for="filter-by-date" class="screen-reader-text"><?php echo get_post_type_object( $post_type )->labels->filter_by_date; ?></label>
 		<select name="m" id="filter-by-date">
-			<option<?php selected( $m, 0 ); ?> value="0"><?php _e( 'All dates' ); ?></option>
+			<option<?php selected( $m, 0 ); ?> value="0"><?php _e( 'All dates', BETDPL_TEXTDOMAIN ); ?></option>
 		<?php
 		foreach ( $months as $arc_row ) {
 			if ( 0 == $arc_row->year ) {
@@ -667,7 +667,7 @@ class WP_List_Table {
 				selected( $m, $year . $month, false ),
 				esc_attr( $arc_row->year . $month ),
 				/* translators: 1: Month name, 2: 4-digit year. */
-				sprintf( __( '%1$s %2$d', BETDPL_NAME ), $wp_locale->get_month( $month ), $year )
+				sprintf( __( '%1$s %2$d', BETDPL_TEXTDOMAIN ), $wp_locale->get_month( $month ), $year )
 			);
 		}
 		?>
@@ -744,7 +744,7 @@ class WP_List_Table {
 			// No comments at all.
 			printf(
 				'<span aria-hidden="true">&#8212;</span><span class="screen-reader-text">%s</span>',
-				__( 'No comments', BETDPL_NAME )
+				__( 'No comments', BETDPL_TEXTDOMAIN )
 			);
 		} elseif ( $approved_comments && 'trash' === get_post_status( $post_id ) ) {
 			// Don't link the comment bubble for a trashed post.
@@ -774,7 +774,7 @@ class WP_List_Table {
 			printf(
 				'<span class="post-com-count post-com-count-no-comments"><span class="comment-count comment-count-no-comments" aria-hidden="true">%s</span><span class="screen-reader-text">%s</span></span>',
 				$approved_comments_number,
-				$pending_comments ? __( 'No approved comments', BETDPL_NAME ) : __( 'No comments', BETDPL_NAME )
+				$pending_comments ? __( 'No approved comments', BETDPL_TEXTDOMAIN ) : __( 'No comments', BETDPL_TEXTDOMAIN )
 			);
 		}
 
@@ -797,7 +797,7 @@ class WP_List_Table {
 			printf(
 				'<span class="post-com-count post-com-count-pending post-com-count-no-pending"><span class="comment-count comment-count-no-pending" aria-hidden="true">%s</span><span class="screen-reader-text">%s</span></span>',
 				$pending_comments_number,
-				$approved_comments ? __( 'No pending comments', BETDPL_NAME ) : __( 'No comments', BETDPL_NAME )
+				$approved_comments ? __( 'No pending comments', BETDPL_TEXTDOMAIN ) : __( 'No comments', BETDPL_TEXTDOMAIN )
 			);
 		}
 	}
@@ -928,7 +928,7 @@ class WP_List_Table {
 			$page_links[] = sprintf(
 				"<a class='first-page button' href='%s'><span class='screen-reader-text'>%s</span><span aria-hidden='true'>%s</span></a>",
 				esc_url( remove_query_arg( 'paged', $current_url ) ),
-				__( 'First page', BETDPL_NAME ),
+				__( 'First page', BETDPL_TEXTDOMAIN ),
 				'&laquo;'
 			);
 		}
@@ -939,18 +939,18 @@ class WP_List_Table {
 			$page_links[] = sprintf(
 				"<a class='prev-page button' href='%s'><span class='screen-reader-text'>%s</span><span aria-hidden='true'>%s</span></a>",
 				esc_url( add_query_arg( 'paged', max( 1, $current - 1 ), $current_url ) ),
-				__( 'Previous page', BETDPL_NAME ),
+				__( 'Previous page', BETDPL_TEXTDOMAIN ),
 				'&lsaquo;'
 			);
 		}
 
 		if ( 'bottom' === $which ) {
 			$html_current_page  = $current;
-			$total_pages_before = '<span class="screen-reader-text">' . __( 'Current Page', BETDPL_NAME ) . '</span><span id="table-paging" class="paging-input"><span class="tablenav-paging-text">';
+			$total_pages_before = '<span class="screen-reader-text">' . __( 'Current Page', BETDPL_TEXTDOMAIN ) . '</span><span id="table-paging" class="paging-input"><span class="tablenav-paging-text">';
 		} else {
 			$html_current_page = sprintf(
 				"%s<input class='current-page' id='current-page-selector' type='text' name='paged' value='%s' size='%d' aria-describedby='table-paging' /><span class='tablenav-paging-text'>",
-				'<label for="current-page-selector" class="screen-reader-text">' . __( 'Current Page', BETDPL_NAME ) . '</label>',
+				'<label for="current-page-selector" class="screen-reader-text">' . __( 'Current Page', BETDPL_TEXTDOMAIN ) . '</label>',
 				$current,
 				strlen( $total_pages )
 			);
@@ -969,7 +969,7 @@ class WP_List_Table {
 			$page_links[] = sprintf(
 				"<a class='next-page button' href='%s'><span class='screen-reader-text'>%s</span><span aria-hidden='true'>%s</span></a>",
 				esc_url( add_query_arg( 'paged', min( $total_pages, $current + 1 ), $current_url ) ),
-				__( 'Next page', BETDPL_NAME ),
+				__( 'Next page', BETDPL_TEXTDOMAIN ),
 				'&rsaquo;'
 			);
 		}
@@ -980,7 +980,7 @@ class WP_List_Table {
 			$page_links[] = sprintf(
 				"<a class='last-page button' href='%s'><span class='screen-reader-text'>%s</span><span aria-hidden='true'>%s</span></a>",
 				esc_url( add_query_arg( 'paged', $total_pages, $current_url ) ),
-				__( 'Last page', BETDPL_NAME ),
+				__( 'Last page', BETDPL_TEXTDOMAIN ),
 				'&raquo;'
 			);
 		}
@@ -1207,7 +1207,7 @@ class WP_List_Table {
 
 		if ( ! empty( $columns['cb'] ) ) {
 			static $cb_counter = 1;
-			$columns['cb']     = '<label class="screen-reader-text" for="cb-select-all-' . $cb_counter . '">' . __( 'Select All', BETDPL_NAME ) . '</label>'
+			$columns['cb']     = '<label class="screen-reader-text" for="cb-select-all-' . $cb_counter . '">' . __( 'Select All', BETDPL_TEXTDOMAIN ) . '</label>'
 				. '<input id="cb-select-all-' . $cb_counter . '" type="checkbox" />';
 			$cb_counter++;
 		}
@@ -1473,7 +1473,7 @@ class WP_List_Table {
 	 *                if the current column is not the primary column.
 	 */
 	protected function handle_row_actions( $item, $column_name, $primary ) {
-		return $column_name === $primary ? '<button type="button" class="toggle-row"><span class="screen-reader-text">' . __( 'Show more details', BETDPL_NAME ) . '</span></button>' : '';
+		return $column_name === $primary ? '<button type="button" class="toggle-row"><span class="screen-reader-text">' . __( 'Show more details', BETDPL_TEXTDOMAIN ) . '</span></button>' : '';
 	}
 
 	/**

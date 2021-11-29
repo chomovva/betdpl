@@ -23,7 +23,7 @@ $selected = get_description_id( array_key_exists( 'tag_ID', $_GET ) ? absint( $_
 
 <tr class="form-field">
 	<th scope="row" valign="top">
-		<label for="select-gutenberg-taxonomy-description"><?php _e( 'Description on Gutenberg', BETDPL_NAME ); ?></label>
+		<label for="select-gutenberg-taxonomy-description"><?php _e( 'Description by means of Gutenberg', BETDPL_TEXTDOMAIN ); ?></label>
 	</th>
 	<td>
 		<?php if ( is_array( $entries ) && ! empty( $entries ) ) : ?>
@@ -38,7 +38,16 @@ $selected = get_description_id( array_key_exists( 'tag_ID', $_GET ) ? absint( $_
 			<p class="description">
 				<?php
 					printf(
-						__( 'Add <a href="%s" target="_blank"> new description </a> or select an existing one from the list below', BETDPL_NAME ),
+						__( 'Add <a href="%s" target="_blank"> new description </a> or select an existing one from the list below', BETDPL_TEXTDOMAIN ),
+						esc_url( admin_url( add_query_arg( [ 'post_type' => BETDPL_POST_TYPE_NAME ], 'post-new.php' ) ) )
+					);
+				?>
+			</p>
+		<?php else : ?>
+			<p>
+				<?php
+					printf(
+						__( 'No description has yet been created by means of Gutenberg. Add a <a href="%s" target="_blank">new description</a>.', BETDPL_TEXTDOMAIN ),
 						esc_url( admin_url( add_query_arg( [ 'post_type' => BETDPL_POST_TYPE_NAME ], 'post-new.php' ) ) )
 					);
 				?>

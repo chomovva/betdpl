@@ -16,7 +16,7 @@ $taxonomies = get_taxonomies( [
 	'show_in_menu'       => true,
 ], 'objects', 'and' );
 if ( empty( $taxonomies ) ) {
-	echo wpautop( __( 'No registered taxonomies found matching the plugin conditions', BETDPL_NAME ), true );
+	echo wpautop( __( 'No registered taxonomies found matching the plugin conditions', BETDPL_TEXTDOMAIN ), true );
 } else {
 	$taxonomy_names = get_plugin_taxonomy_names();
 	foreach( $taxonomies as $taxonomy ) {

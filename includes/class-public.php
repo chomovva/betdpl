@@ -19,8 +19,8 @@ class PublicPart {
 	 * @param     $context
 	 * @return    string
 	 * */
-	public function render_description( $value, $term_id, $context ) {
-		$description_content = get_description_content( $term_id );
+	public function render_description( $value, $term_id, $context = '' ) {
+		$description_content = get_description_content( $term_id instanceof \WP_Term ? $term_id->term_id : $term_id );
 		return ( empty( trim( $description_content ) ) ) ? $value : $description_content;
 	}
 

@@ -16,7 +16,7 @@ if ( ! defined( 'WPINC' ) ) {
 		target="_blank"
 		class="button button-primary"
 	>
-		<?php _e( 'Add new description', BETDPL_NAME ); ?>
+		<?php _e( 'Add new description', BETDPL_TEXTDOMAIN ); ?>
 	</a>
 </p>
 
